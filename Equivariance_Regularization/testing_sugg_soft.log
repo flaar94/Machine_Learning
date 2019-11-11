@@ -1,0 +1,893 @@
+2019-11-10 19:28:33,577:root:INFO:Starting New Test
+2019-11-10 19:28:33,589:root:INFO:Train length: 10000
+2019-11-10 19:28:33,589:root:INFO:Valid length: 10000
+2019-11-10 19:28:33,603:root:INFO:train_transform: Compose(
+    ToTensor()
+    Normalize(mean=(0.1307,), std=(0.3081,))
+)
+2019-11-10 19:28:33,605:root:INFO:valid_transform: Compose(
+    ToTensor()
+    Normalize(mean=(0.1307,), std=(0.3081,))
+)
+2019-11-10 19:28:33,736:root:INFO:(Regularization) BASE = 1, LAMBDA = 30, DECAY = 1.0000000000000004e-06
+2019-11-10 19:28:33,737:root:INFO:LR = 0.01, LR_BASE = 0.95, MOMENTUM = 0.5
+2019-11-10 19:28:33,741:root:INFO:Trainloader = <torch.utils.data.dataloader.DataLoader object at 0x000001ACE337D828>
+2019-11-10 19:28:33,801:root:INFO:-----------------------Starting Testing--------------------------------
+2019-11-10 19:28:33,801:root:INFO:-------------------------Starting test 1----------------------------
+2019-11-10 19:28:33,811:root:INFO:Net(
+  (conv1): P4ConvZ2(in_channels=1, out_channels=16, kernel_size=(3, 3), stride=(1, 1), padding=(0, 0), bias=True, input_stabilizer_size=1, output_stabilizer_size=4)
+  (conv2): P4ConvP4(in_channels=16, out_channels=32, kernel_size=(3, 3), stride=(1, 1), padding=(0, 0), bias=True, input_stabilizer_size=4, output_stabilizer_size=4)
+  (conv4): P4ConvP4(in_channels=32, out_channels=64, kernel_size=(3, 3), stride=(1, 1), padding=(0, 0), bias=True, input_stabilizer_size=4, output_stabilizer_size=4)
+  (conv5): P4ConvP4(in_channels=64, out_channels=128, kernel_size=(3, 3), stride=(1, 1), padding=(0, 0), bias=True, input_stabilizer_size=4, output_stabilizer_size=4)
+  (fc1): Linear(in_features=8192, out_features=10, bias=True)
+)
+2019-11-10 19:28:33,811:root:INFO:equivariant loss function: MSELoss()
+2019-11-10 19:28:36,337:root:INFO:Starting epoch 1
+2019-11-10 19:28:56,695:root:INFO:Correctness on training epoch: 90.96%
+2019-11-10 19:29:09,134:root:INFO:Accuracy of the network on the 10000 validation images: 97.28%
+2019-11-10 19:29:23,061:root:INFO:Accuracy of the network on the 10000 translated images: 73.42%
+2019-11-10 19:29:36,318:root:INFO:Accuracy of the network on the 10000 rotated images: 79.24%
+2019-11-10 19:29:36,319:root:INFO:Starting epoch 2
+2019-11-10 19:29:56,102:root:INFO:Correctness on training epoch: 97.39%
+2019-11-10 19:30:08,258:root:INFO:Accuracy of the network on the 10000 validation images: 98.19%
+2019-11-10 19:30:21,814:root:INFO:Accuracy of the network on the 10000 translated images: 77.89%
+2019-11-10 19:30:35,058:root:INFO:Accuracy of the network on the 10000 rotated images: 82.89%
+2019-11-10 19:30:35,058:root:INFO:Starting epoch 3
+2019-11-10 19:30:55,252:root:INFO:Correctness on training epoch: 97.69%
+2019-11-10 19:31:07,982:root:INFO:Accuracy of the network on the 10000 validation images: 98.00%
+2019-11-10 19:31:22,129:root:INFO:Accuracy of the network on the 10000 translated images: 79.58%
+2019-11-10 19:31:35,956:root:INFO:Accuracy of the network on the 10000 rotated images: 83.80%
+2019-11-10 19:31:35,956:root:INFO:Starting epoch 4
+2019-11-10 19:31:55,972:root:INFO:Correctness on training epoch: 98.42%
+2019-11-10 19:32:08,425:root:INFO:Accuracy of the network on the 10000 validation images: 98.43%
+2019-11-10 19:32:21,950:root:INFO:Accuracy of the network on the 10000 translated images: 82.31%
+2019-11-10 19:32:35,010:root:INFO:Accuracy of the network on the 10000 rotated images: 85.55%
+2019-11-10 19:32:35,010:root:INFO:Starting epoch 5
+2019-11-10 19:32:55,035:root:INFO:Correctness on training epoch: 98.64%
+2019-11-10 19:33:07,736:root:INFO:Accuracy of the network on the 10000 validation images: 98.26%
+2019-11-10 19:33:21,830:root:INFO:Accuracy of the network on the 10000 translated images: 82.05%
+2019-11-10 19:33:35,519:root:INFO:Accuracy of the network on the 10000 rotated images: 85.91%
+2019-11-10 19:33:35,519:root:INFO:Starting epoch 6
+2019-11-10 19:33:55,399:root:INFO:Correctness on training epoch: 98.76%
+2019-11-10 19:34:08,039:root:INFO:Accuracy of the network on the 10000 validation images: 98.23%
+2019-11-10 19:34:21,846:root:INFO:Accuracy of the network on the 10000 translated images: 84.03%
+2019-11-10 19:34:35,038:root:INFO:Accuracy of the network on the 10000 rotated images: 86.87%
+2019-11-10 19:34:35,038:root:INFO:Starting epoch 7
+2019-11-10 19:34:54,808:root:INFO:Correctness on training epoch: 98.89%
+2019-11-10 19:35:07,141:root:INFO:Accuracy of the network on the 10000 validation images: 98.47%
+2019-11-10 19:35:20,949:root:INFO:Accuracy of the network on the 10000 translated images: 85.79%
+2019-11-10 19:35:34,324:root:INFO:Accuracy of the network on the 10000 rotated images: 88.00%
+2019-11-10 19:35:34,324:root:INFO:Starting epoch 8
+2019-11-10 19:35:54,188:root:INFO:Correctness on training epoch: 99.03%
+2019-11-10 19:36:06,676:root:INFO:Accuracy of the network on the 10000 validation images: 97.57%
+2019-11-10 19:36:20,325:root:INFO:Accuracy of the network on the 10000 translated images: 85.63%
+2019-11-10 19:36:33,429:root:INFO:Accuracy of the network on the 10000 rotated images: 87.26%
+2019-11-10 19:36:33,429:root:INFO:Starting epoch 9
+2019-11-10 19:36:53,306:root:INFO:Correctness on training epoch: 99.11%
+2019-11-10 19:37:05,885:root:INFO:Accuracy of the network on the 10000 validation images: 98.02%
+2019-11-10 19:37:19,878:root:INFO:Accuracy of the network on the 10000 translated images: 86.34%
+2019-11-10 19:37:33,342:root:INFO:Accuracy of the network on the 10000 rotated images: 87.99%
+2019-11-10 19:37:33,343:root:INFO:Starting epoch 10
+2019-11-10 19:37:53,168:root:INFO:Correctness on training epoch: 99.32%
+2019-11-10 19:38:05,496:root:INFO:Accuracy of the network on the 10000 validation images: 98.92%
+2019-11-10 19:38:19,155:root:INFO:Accuracy of the network on the 10000 translated images: 88.86%
+2019-11-10 19:38:32,548:root:INFO:Accuracy of the network on the 10000 rotated images: 90.49%
+2019-11-10 19:38:32,549:root:INFO:Starting epoch 11
+2019-11-10 19:38:52,370:root:INFO:Correctness on training epoch: 99.44%
+2019-11-10 19:39:04,726:root:INFO:Accuracy of the network on the 10000 validation images: 98.64%
+2019-11-10 19:39:18,352:root:INFO:Accuracy of the network on the 10000 translated images: 88.66%
+2019-11-10 19:39:31,368:root:INFO:Accuracy of the network on the 10000 rotated images: 90.01%
+2019-11-10 19:39:31,369:root:INFO:Starting epoch 12
+2019-11-10 19:39:51,185:root:INFO:Correctness on training epoch: 99.44%
+2019-11-10 19:40:03,778:root:INFO:Accuracy of the network on the 10000 validation images: 98.29%
+2019-11-10 19:41:08,051:root:INFO:Starting New Test
+2019-11-10 19:41:08,075:root:INFO:Train length: 10000
+2019-11-10 19:41:08,076:root:INFO:Valid length: 10000
+2019-11-10 19:41:08,099:root:INFO:train_transform: Compose(
+    ToTensor()
+    Normalize(mean=(0.1307,), std=(0.3081,))
+)
+2019-11-10 19:41:08,100:root:INFO:valid_transform: Compose(
+    ToTensor()
+    Normalize(mean=(0.1307,), std=(0.3081,))
+)
+2019-11-10 19:41:08,205:root:INFO:(Regularization) BASE = 1, LAMBDA = 30, DECAY = 1.0000000000000004e-06
+2019-11-10 19:41:08,205:root:INFO:LR = 0.01, LR_BASE = 0.95, MOMENTUM = 0.5
+2019-11-10 19:41:08,252:root:INFO:Trainloader = <torch.utils.data.dataloader.DataLoader object at 0x000001ACB06B76A0>
+2019-11-10 19:41:08,307:root:INFO:-----------------------Starting Testing--------------------------------
+2019-11-10 19:41:08,307:root:INFO:-------------------------Starting test 1----------------------------
+2019-11-10 19:41:08,562:root:INFO:Net(
+  (conv1): P4ConvZ2(in_channels=1, out_channels=16, kernel_size=(3, 3), stride=(1, 1), padding=(0, 0), bias=True, input_stabilizer_size=1, output_stabilizer_size=4)
+  (conv2): P4ConvP4(in_channels=16, out_channels=32, kernel_size=(3, 3), stride=(1, 1), padding=(0, 0), bias=True, input_stabilizer_size=4, output_stabilizer_size=4)
+  (conv4): P4ConvP4(in_channels=32, out_channels=64, kernel_size=(3, 3), stride=(1, 1), padding=(0, 0), bias=True, input_stabilizer_size=4, output_stabilizer_size=4)
+  (conv5): P4ConvP4(in_channels=64, out_channels=128, kernel_size=(3, 3), stride=(1, 1), padding=(0, 0), bias=True, input_stabilizer_size=4, output_stabilizer_size=4)
+  (fc1): Linear(in_features=8192, out_features=10, bias=True)
+)
+2019-11-10 19:41:08,563:root:INFO:equivariant loss function: MSELoss()
+2019-11-10 19:41:08,575:root:INFO:Starting epoch 1
+2019-11-10 19:41:28,327:root:INFO:Correctness on training epoch: 90.79%
+2019-11-10 19:41:31,080:root:INFO:Accuracy of the network on the 10000 validation images: 97.05%
+2019-11-10 19:41:34,077:root:INFO:Accuracy of the network on the 10000 translated images: 72.23%
+2019-11-10 19:41:36,950:root:INFO:Accuracy of the network on the 10000 rotated images: 78.22%
+2019-11-10 19:41:36,951:root:INFO:Starting epoch 2
+2019-11-10 19:41:56,718:root:INFO:Correctness on training epoch: 97.03%
+2019-11-10 19:41:59,535:root:INFO:Accuracy of the network on the 10000 validation images: 97.72%
+2019-11-10 19:42:02,592:root:INFO:Accuracy of the network on the 10000 translated images: 76.27%
+2019-11-10 19:42:05,488:root:INFO:Accuracy of the network on the 10000 rotated images: 81.38%
+2019-11-10 19:42:05,488:root:INFO:Starting epoch 3
+2019-11-10 19:42:25,453:root:INFO:Correctness on training epoch: 97.88%
+2019-11-10 19:42:28,356:root:INFO:Accuracy of the network on the 10000 validation images: 96.83%
+2019-11-10 19:42:31,368:root:INFO:Accuracy of the network on the 10000 translated images: 77.58%
+2019-11-10 19:42:34,270:root:INFO:Accuracy of the network on the 10000 rotated images: 81.84%
+2019-11-10 19:42:34,270:root:INFO:Starting epoch 4
+2019-11-10 19:42:54,080:root:INFO:Correctness on training epoch: 98.21%
+2019-11-10 19:42:56,875:root:INFO:Accuracy of the network on the 10000 validation images: 97.65%
+2019-11-10 19:42:59,882:root:INFO:Accuracy of the network on the 10000 translated images: 81.02%
+2019-11-10 19:43:02,830:root:INFO:Accuracy of the network on the 10000 rotated images: 84.59%
+2019-11-10 19:43:02,830:root:INFO:Starting epoch 5
+2019-11-10 19:43:22,609:root:INFO:Correctness on training epoch: 98.42%
+2019-11-10 19:43:25,426:root:INFO:Accuracy of the network on the 10000 validation images: 97.75%
+2019-11-10 19:43:28,486:root:INFO:Accuracy of the network on the 10000 translated images: 82.67%
+2019-11-10 19:43:31,454:root:INFO:Accuracy of the network on the 10000 rotated images: 85.69%
+2019-11-10 19:43:31,454:root:INFO:Starting epoch 6
+2019-11-10 19:43:50,927:root:INFO:Correctness on training epoch: 98.69%
+2019-11-10 19:43:53,656:root:INFO:Accuracy of the network on the 10000 validation images: 98.11%
+2019-11-10 19:43:56,578:root:INFO:Accuracy of the network on the 10000 translated images: 83.17%
+2019-11-10 19:43:59,394:root:INFO:Accuracy of the network on the 10000 rotated images: 86.31%
+2019-11-10 19:43:59,394:root:INFO:Starting epoch 7
+2019-11-10 19:44:19,081:root:INFO:Correctness on training epoch: 98.81%
+2019-11-10 19:44:21,833:root:INFO:Accuracy of the network on the 10000 validation images: 98.05%
+2019-11-10 19:44:24,787:root:INFO:Accuracy of the network on the 10000 translated images: 83.42%
+2019-11-10 19:44:27,616:root:INFO:Accuracy of the network on the 10000 rotated images: 86.53%
+2019-11-10 19:44:27,617:root:INFO:Starting epoch 8
+2019-11-10 19:44:47,316:root:INFO:Correctness on training epoch: 98.97%
+2019-11-10 19:44:50,071:root:INFO:Accuracy of the network on the 10000 validation images: 97.37%
+2019-11-10 19:44:53,073:root:INFO:Accuracy of the network on the 10000 translated images: 84.89%
+2019-11-10 19:44:55,901:root:INFO:Accuracy of the network on the 10000 rotated images: 87.01%
+2019-11-10 19:44:55,901:root:INFO:Starting epoch 9
+2019-11-10 19:45:15,471:root:INFO:Correctness on training epoch: 99.07%
+2019-11-10 19:45:18,281:root:INFO:Accuracy of the network on the 10000 validation images: 98.80%
+2019-11-10 19:45:21,253:root:INFO:Accuracy of the network on the 10000 translated images: 86.27%
+2019-11-10 19:45:24,087:root:INFO:Accuracy of the network on the 10000 rotated images: 88.85%
+2019-11-10 19:45:24,088:root:INFO:Starting epoch 10
+2019-11-10 19:45:43,766:root:INFO:Correctness on training epoch: 99.28%
+2019-11-10 19:45:46,494:root:INFO:Accuracy of the network on the 10000 validation images: 98.36%
+2019-11-10 19:45:49,470:root:INFO:Accuracy of the network on the 10000 translated images: 85.55%
+2019-11-10 19:45:52,618:root:INFO:Accuracy of the network on the 10000 rotated images: 87.87%
+2019-11-10 19:45:52,619:root:INFO:Starting epoch 11
+2019-11-10 19:46:13,127:root:INFO:Correctness on training epoch: 99.37%
+2019-11-10 19:46:15,899:root:INFO:Accuracy of the network on the 10000 validation images: 98.64%
+2019-11-10 19:46:18,895:root:INFO:Accuracy of the network on the 10000 translated images: 88.11%
+2019-11-10 19:46:21,807:root:INFO:Accuracy of the network on the 10000 rotated images: 89.97%
+2019-11-10 19:46:21,807:root:INFO:Starting epoch 12
+2019-11-10 19:46:41,433:root:INFO:Correctness on training epoch: 99.52%
+2019-11-10 19:46:44,150:root:INFO:Accuracy of the network on the 10000 validation images: 98.76%
+2019-11-10 19:46:47,104:root:INFO:Accuracy of the network on the 10000 translated images: 87.17%
+2019-11-10 19:46:50,010:root:INFO:Accuracy of the network on the 10000 rotated images: 89.24%
+2019-11-10 19:46:50,010:root:INFO:Starting epoch 13
+2019-11-10 19:47:09,649:root:INFO:Correctness on training epoch: 99.31%
+2019-11-10 19:47:12,410:root:INFO:Accuracy of the network on the 10000 validation images: 98.59%
+2019-11-10 19:47:15,343:root:INFO:Accuracy of the network on the 10000 translated images: 86.08%
+2019-11-10 19:47:18,149:root:INFO:Accuracy of the network on the 10000 rotated images: 88.60%
+2019-11-10 19:47:18,149:root:INFO:Starting epoch 14
+2019-11-10 19:47:37,825:root:INFO:Correctness on training epoch: 99.70%
+2019-11-10 19:47:40,600:root:INFO:Accuracy of the network on the 10000 validation images: 98.72%
+2019-11-10 19:47:43,566:root:INFO:Accuracy of the network on the 10000 translated images: 88.28%
+2019-11-10 19:47:46,390:root:INFO:Accuracy of the network on the 10000 rotated images: 90.12%
+2019-11-10 19:47:46,391:root:INFO:Starting epoch 15
+2019-11-10 19:48:05,996:root:INFO:Correctness on training epoch: 99.76%
+2019-11-10 19:48:08,766:root:INFO:Accuracy of the network on the 10000 validation images: 97.07%
+2019-11-10 19:48:11,678:root:INFO:Accuracy of the network on the 10000 translated images: 85.06%
+2019-11-10 19:48:14,478:root:INFO:Accuracy of the network on the 10000 rotated images: 87.16%
+2019-11-10 19:48:14,478:root:INFO:Starting epoch 16
+2019-11-10 19:48:34,045:root:INFO:Correctness on training epoch: 99.80%
+2019-11-10 19:48:37,044:root:INFO:Accuracy of the network on the 10000 validation images: 98.91%
+2019-11-10 19:48:40,023:root:INFO:Accuracy of the network on the 10000 translated images: 89.00%
+2019-11-10 19:48:42,890:root:INFO:Accuracy of the network on the 10000 rotated images: 90.71%
+2019-11-10 19:48:42,890:root:INFO:Starting epoch 17
+2019-11-10 19:49:02,543:root:INFO:Correctness on training epoch: 99.86%
+2019-11-10 19:49:05,314:root:INFO:Accuracy of the network on the 10000 validation images: 98.82%
+2019-11-10 19:49:08,268:root:INFO:Accuracy of the network on the 10000 translated images: 88.83%
+2019-11-10 19:49:11,104:root:INFO:Accuracy of the network on the 10000 rotated images: 90.50%
+2019-11-10 19:49:11,104:root:INFO:Starting epoch 18
+2019-11-10 19:49:30,588:root:INFO:Correctness on training epoch: 99.72%
+2019-11-10 19:49:33,324:root:INFO:Accuracy of the network on the 10000 validation images: 98.70%
+2019-11-10 19:49:36,296:root:INFO:Accuracy of the network on the 10000 translated images: 88.79%
+2019-11-10 19:49:39,233:root:INFO:Accuracy of the network on the 10000 rotated images: 90.42%
+2019-11-10 19:49:39,233:root:INFO:Starting epoch 19
+2019-11-10 19:49:59,043:root:INFO:Correctness on training epoch: 99.74%
+2019-11-10 19:50:01,806:root:INFO:Accuracy of the network on the 10000 validation images: 98.73%
+2019-11-10 19:50:04,798:root:INFO:Accuracy of the network on the 10000 translated images: 89.15%
+2019-11-10 19:50:07,646:root:INFO:Accuracy of the network on the 10000 rotated images: 90.52%
+2019-11-10 19:50:07,646:root:INFO:Starting epoch 20
+2019-11-10 19:50:27,577:root:INFO:Correctness on training epoch: 99.93%
+2019-11-10 19:50:30,294:root:INFO:Accuracy of the network on the 10000 validation images: 98.89%
+2019-11-10 19:50:33,208:root:INFO:Accuracy of the network on the 10000 translated images: 89.92%
+2019-11-10 19:50:36,007:root:INFO:Accuracy of the network on the 10000 rotated images: 91.41%
+2019-11-10 19:50:36,007:root:INFO:Starting epoch 21
+2019-11-10 19:50:55,504:root:INFO:Correctness on training epoch: 99.98%
+2019-11-10 19:50:58,229:root:INFO:Accuracy of the network on the 10000 validation images: 98.83%
+2019-11-10 19:51:01,187:root:INFO:Accuracy of the network on the 10000 translated images: 89.97%
+2019-11-10 19:51:04,012:root:INFO:Accuracy of the network on the 10000 rotated images: 91.19%
+2019-11-10 19:51:04,013:root:INFO:Starting epoch 22
+2019-11-10 19:51:23,616:root:INFO:Correctness on training epoch: 99.96%
+2019-11-10 19:51:26,416:root:INFO:Accuracy of the network on the 10000 validation images: 98.89%
+2019-11-10 19:51:29,363:root:INFO:Accuracy of the network on the 10000 translated images: 90.17%
+2019-11-10 19:51:32,222:root:INFO:Accuracy of the network on the 10000 rotated images: 91.38%
+2019-11-10 19:51:32,222:root:INFO:Starting epoch 23
+2019-11-10 19:51:51,906:root:INFO:Correctness on training epoch: 100.00%
+2019-11-10 19:51:54,673:root:INFO:Accuracy of the network on the 10000 validation images: 98.84%
+2019-11-10 19:51:57,656:root:INFO:Accuracy of the network on the 10000 translated images: 90.36%
+2019-11-10 19:52:00,645:root:INFO:Accuracy of the network on the 10000 rotated images: 91.37%
+2019-11-10 19:52:00,645:root:INFO:Starting epoch 24
+2019-11-10 19:52:20,223:root:INFO:Correctness on training epoch: 100.00%
+2019-11-10 19:52:23,004:root:INFO:Accuracy of the network on the 10000 validation images: 98.81%
+2019-11-10 19:52:26,230:root:INFO:Accuracy of the network on the 10000 translated images: 90.49%
+2019-11-10 19:52:29,001:root:INFO:Accuracy of the network on the 10000 rotated images: 91.58%
+2019-11-10 19:52:29,001:root:INFO:Finished
+2019-11-10 19:52:29,001:root:INFO:-------------------------Starting test 2----------------------------
+2019-11-10 19:52:29,011:root:INFO:Net(
+  (conv1): P4ConvZ2(in_channels=1, out_channels=16, kernel_size=(3, 3), stride=(1, 1), padding=(0, 0), bias=True, input_stabilizer_size=1, output_stabilizer_size=4)
+  (conv2): P4ConvP4(in_channels=16, out_channels=32, kernel_size=(3, 3), stride=(1, 1), padding=(0, 0), bias=True, input_stabilizer_size=4, output_stabilizer_size=4)
+  (conv4): P4ConvP4(in_channels=32, out_channels=64, kernel_size=(3, 3), stride=(1, 1), padding=(0, 0), bias=True, input_stabilizer_size=4, output_stabilizer_size=4)
+  (conv5): P4ConvP4(in_channels=64, out_channels=128, kernel_size=(3, 3), stride=(1, 1), padding=(0, 0), bias=True, input_stabilizer_size=4, output_stabilizer_size=4)
+  (fc1): Linear(in_features=8192, out_features=10, bias=True)
+)
+2019-11-10 19:52:29,011:root:INFO:equivariant loss function: MSELoss()
+2019-11-10 19:52:29,013:root:INFO:Starting epoch 1
+2019-11-10 19:52:47,885:root:INFO:Correctness on training epoch: 91.25%
+2019-11-10 19:52:50,383:root:INFO:Accuracy of the network on the 10000 validation images: 97.14%
+2019-11-10 19:52:53,004:root:INFO:Accuracy of the network on the 10000 translated images: 72.85%
+2019-11-10 19:52:55,594:root:INFO:Accuracy of the network on the 10000 rotated images: 78.59%
+2019-11-10 19:52:55,594:root:INFO:Starting epoch 2
+2019-11-10 19:53:14,456:root:INFO:Correctness on training epoch: 97.14%
+2019-11-10 19:53:17,007:root:INFO:Accuracy of the network on the 10000 validation images: 97.65%
+2019-11-10 19:53:19,640:root:INFO:Accuracy of the network on the 10000 translated images: 76.91%
+2019-11-10 19:53:22,312:root:INFO:Accuracy of the network on the 10000 rotated images: 81.52%
+2019-11-10 19:53:22,313:root:INFO:Starting epoch 3
+2019-11-10 19:53:41,250:root:INFO:Correctness on training epoch: 97.75%
+2019-11-10 19:53:43,847:root:INFO:Accuracy of the network on the 10000 validation images: 97.68%
+2019-11-10 19:53:46,534:root:INFO:Accuracy of the network on the 10000 translated images: 78.22%
+2019-11-10 19:53:49,202:root:INFO:Accuracy of the network on the 10000 rotated images: 82.78%
+2019-11-10 19:53:49,202:root:INFO:Starting epoch 4
+2019-11-10 19:54:08,248:root:INFO:Correctness on training epoch: 98.19%
+2019-11-10 19:54:10,887:root:INFO:Accuracy of the network on the 10000 validation images: 98.11%
+2019-11-10 19:54:13,548:root:INFO:Accuracy of the network on the 10000 translated images: 80.54%
+2019-11-10 19:54:16,201:root:INFO:Accuracy of the network on the 10000 rotated images: 84.63%
+2019-11-10 19:54:16,201:root:INFO:Starting epoch 5
+2019-11-10 19:54:35,044:root:INFO:Correctness on training epoch: 98.60%
+2019-11-10 19:54:37,606:root:INFO:Accuracy of the network on the 10000 validation images: 98.32%
+2019-11-10 19:54:40,266:root:INFO:Accuracy of the network on the 10000 translated images: 84.23%
+2019-11-10 19:54:42,884:root:INFO:Accuracy of the network on the 10000 rotated images: 87.36%
+2019-11-10 19:54:42,884:root:INFO:Starting epoch 6
+2019-11-10 19:55:01,725:root:INFO:Correctness on training epoch: 98.70%
+2019-11-10 19:55:04,280:root:INFO:Accuracy of the network on the 10000 validation images: 97.66%
+2019-11-10 19:55:06,942:root:INFO:Accuracy of the network on the 10000 translated images: 83.84%
+2019-11-10 19:55:09,560:root:INFO:Accuracy of the network on the 10000 rotated images: 86.89%
+2019-11-10 19:55:09,560:root:INFO:Starting epoch 7
+2019-11-10 19:55:28,552:root:INFO:Correctness on training epoch: 98.86%
+2019-11-10 19:55:31,192:root:INFO:Accuracy of the network on the 10000 validation images: 98.50%
+2019-11-10 19:55:33,893:root:INFO:Accuracy of the network on the 10000 translated images: 84.64%
+2019-11-10 19:55:36,585:root:INFO:Accuracy of the network on the 10000 rotated images: 87.62%
+2019-11-10 19:55:36,586:root:INFO:Starting epoch 8
+2019-11-10 19:55:55,485:root:INFO:Correctness on training epoch: 98.96%
+2019-11-10 19:55:58,013:root:INFO:Accuracy of the network on the 10000 validation images: 98.26%
+2019-11-10 19:56:00,745:root:INFO:Accuracy of the network on the 10000 translated images: 84.85%
+2019-11-10 19:56:03,384:root:INFO:Accuracy of the network on the 10000 rotated images: 87.46%
+2019-11-10 19:56:03,385:root:INFO:Starting epoch 9
+2019-11-10 19:56:22,206:root:INFO:Correctness on training epoch: 99.23%
+2019-11-10 19:56:24,779:root:INFO:Accuracy of the network on the 10000 validation images: 98.60%
+2019-11-10 19:56:27,465:root:INFO:Accuracy of the network on the 10000 translated images: 86.53%
+2019-11-10 19:56:30,105:root:INFO:Accuracy of the network on the 10000 rotated images: 89.03%
+2019-11-10 19:56:30,105:root:INFO:Starting epoch 10
+2019-11-10 19:56:49,004:root:INFO:Correctness on training epoch: 99.42%
+2019-11-10 19:56:51,578:root:INFO:Accuracy of the network on the 10000 validation images: 98.07%
+2019-11-10 19:56:54,322:root:INFO:Accuracy of the network on the 10000 translated images: 85.11%
+2019-11-10 19:56:56,982:root:INFO:Accuracy of the network on the 10000 rotated images: 87.67%
+2019-11-10 19:56:56,983:root:INFO:Starting epoch 11
+2019-11-10 19:57:17,293:root:INFO:Correctness on training epoch: 99.36%
+2019-11-10 19:57:20,191:root:INFO:Accuracy of the network on the 10000 validation images: 98.50%
+2019-11-10 19:57:23,383:root:INFO:Accuracy of the network on the 10000 translated images: 87.68%
+2019-11-10 19:57:26,364:root:INFO:Accuracy of the network on the 10000 rotated images: 89.46%
+2019-11-10 19:57:26,364:root:INFO:Starting epoch 12
+2019-11-10 19:57:46,694:root:INFO:Correctness on training epoch: 99.24%
+2019-11-10 19:57:49,851:root:INFO:Accuracy of the network on the 10000 validation images: 97.63%
+2019-11-10 19:57:52,950:root:INFO:Accuracy of the network on the 10000 translated images: 87.07%
+2019-11-10 19:57:56,072:root:INFO:Accuracy of the network on the 10000 rotated images: 88.67%
+2019-11-10 19:57:56,073:root:INFO:Starting epoch 13
+2019-11-10 19:58:16,132:root:INFO:Correctness on training epoch: 99.54%
+2019-11-10 19:58:18,968:root:INFO:Accuracy of the network on the 10000 validation images: 98.56%
+2019-11-10 19:58:22,008:root:INFO:Accuracy of the network on the 10000 translated images: 88.55%
+2019-11-10 19:58:24,943:root:INFO:Accuracy of the network on the 10000 rotated images: 90.13%
+2019-11-10 19:58:24,943:root:INFO:Starting epoch 14
+2019-11-10 19:58:44,741:root:INFO:Correctness on training epoch: 99.71%
+2019-11-10 19:58:47,588:root:INFO:Accuracy of the network on the 10000 validation images: 98.72%
+2019-11-10 19:58:50,609:root:INFO:Accuracy of the network on the 10000 translated images: 89.46%
+2019-11-10 19:58:53,580:root:INFO:Accuracy of the network on the 10000 rotated images: 90.90%
+2019-11-10 19:58:53,581:root:INFO:Starting epoch 15
+2019-11-10 19:59:13,459:root:INFO:Correctness on training epoch: 99.80%
+2019-11-10 19:59:16,241:root:INFO:Accuracy of the network on the 10000 validation images: 98.47%
+2019-11-10 19:59:19,210:root:INFO:Accuracy of the network on the 10000 translated images: 88.68%
+2019-11-10 19:59:22,099:root:INFO:Accuracy of the network on the 10000 rotated images: 89.94%
+2019-11-10 19:59:22,099:root:INFO:Starting epoch 16
+2019-11-10 19:59:41,602:root:INFO:Correctness on training epoch: 99.32%
+2019-11-10 19:59:44,318:root:INFO:Accuracy of the network on the 10000 validation images: 96.20%
+2019-11-10 19:59:47,282:root:INFO:Accuracy of the network on the 10000 translated images: 86.17%
+2019-11-10 19:59:50,133:root:INFO:Accuracy of the network on the 10000 rotated images: 86.86%
+2019-11-10 19:59:50,133:root:INFO:Starting epoch 17
+2019-11-10 20:00:09,837:root:INFO:Correctness on training epoch: 99.77%
+2019-11-10 20:00:12,558:root:INFO:Accuracy of the network on the 10000 validation images: 98.69%
+2019-11-10 20:00:15,519:root:INFO:Accuracy of the network on the 10000 translated images: 89.86%
+2019-11-10 20:00:18,416:root:INFO:Accuracy of the network on the 10000 rotated images: 90.88%
+2019-11-10 20:00:18,416:root:INFO:Starting epoch 18
+2019-11-10 20:00:38,090:root:INFO:Correctness on training epoch: 99.81%
+2019-11-10 20:00:40,884:root:INFO:Accuracy of the network on the 10000 validation images: 98.60%
+2019-11-10 20:00:43,883:root:INFO:Accuracy of the network on the 10000 translated images: 89.89%
+2019-11-10 20:00:46,793:root:INFO:Accuracy of the network on the 10000 rotated images: 91.04%
+2019-11-10 20:00:46,794:root:INFO:Starting epoch 19
+2019-11-10 20:01:06,570:root:INFO:Correctness on training epoch: 99.81%
+2019-11-10 20:01:09,338:root:INFO:Accuracy of the network on the 10000 validation images: 98.68%
+2019-11-10 20:01:12,307:root:INFO:Accuracy of the network on the 10000 translated images: 89.45%
+2019-11-10 20:01:15,150:root:INFO:Accuracy of the network on the 10000 rotated images: 90.69%
+2019-11-10 20:01:15,150:root:INFO:Starting epoch 20
+2019-11-10 20:01:34,754:root:INFO:Correctness on training epoch: 99.86%
+2019-11-10 20:01:37,440:root:INFO:Accuracy of the network on the 10000 validation images: 98.55%
+2019-11-10 20:01:40,370:root:INFO:Accuracy of the network on the 10000 translated images: 90.08%
+2019-11-10 20:01:43,181:root:INFO:Accuracy of the network on the 10000 rotated images: 90.93%
+2019-11-10 20:01:43,181:root:INFO:Starting epoch 21
+2019-11-10 20:02:02,880:root:INFO:Correctness on training epoch: 99.90%
+2019-11-10 20:02:05,624:root:INFO:Accuracy of the network on the 10000 validation images: 98.57%
+2019-11-10 20:02:08,613:root:INFO:Accuracy of the network on the 10000 translated images: 89.03%
+2019-11-10 20:02:11,466:root:INFO:Accuracy of the network on the 10000 rotated images: 90.43%
+2019-11-10 20:02:11,466:root:INFO:Starting epoch 22
+2019-11-10 20:02:31,096:root:INFO:Correctness on training epoch: 99.97%
+2019-11-10 20:02:33,870:root:INFO:Accuracy of the network on the 10000 validation images: 98.88%
+2019-11-10 20:02:36,851:root:INFO:Accuracy of the network on the 10000 translated images: 90.62%
+2019-11-10 20:02:39,821:root:INFO:Accuracy of the network on the 10000 rotated images: 91.61%
+2019-11-10 20:02:39,821:root:INFO:Starting epoch 23
+2019-11-10 20:02:59,656:root:INFO:Correctness on training epoch: 100.00%
+2019-11-10 20:03:02,454:root:INFO:Accuracy of the network on the 10000 validation images: 98.97%
+2019-11-10 20:03:05,453:root:INFO:Accuracy of the network on the 10000 translated images: 90.86%
+2019-11-10 20:03:08,454:root:INFO:Accuracy of the network on the 10000 rotated images: 91.82%
+2019-11-10 20:03:08,454:root:INFO:Starting epoch 24
+2019-11-10 20:03:28,242:root:INFO:Correctness on training epoch: 100.00%
+2019-11-10 20:03:31,035:root:INFO:Accuracy of the network on the 10000 validation images: 98.84%
+2019-11-10 20:03:34,018:root:INFO:Accuracy of the network on the 10000 translated images: 90.59%
+2019-11-10 20:03:36,894:root:INFO:Accuracy of the network on the 10000 rotated images: 91.32%
+2019-11-10 20:03:36,895:root:INFO:Finished
+2019-11-10 20:03:36,895:root:INFO:-------------------------Starting test 3----------------------------
+2019-11-10 20:03:36,906:root:INFO:Net(
+  (conv1): P4ConvZ2(in_channels=1, out_channels=16, kernel_size=(3, 3), stride=(1, 1), padding=(0, 0), bias=True, input_stabilizer_size=1, output_stabilizer_size=4)
+  (conv2): P4ConvP4(in_channels=16, out_channels=32, kernel_size=(3, 3), stride=(1, 1), padding=(0, 0), bias=True, input_stabilizer_size=4, output_stabilizer_size=4)
+  (conv4): P4ConvP4(in_channels=32, out_channels=64, kernel_size=(3, 3), stride=(1, 1), padding=(0, 0), bias=True, input_stabilizer_size=4, output_stabilizer_size=4)
+  (conv5): P4ConvP4(in_channels=64, out_channels=128, kernel_size=(3, 3), stride=(1, 1), padding=(0, 0), bias=True, input_stabilizer_size=4, output_stabilizer_size=4)
+  (fc1): Linear(in_features=8192, out_features=10, bias=True)
+)
+2019-11-10 20:03:36,906:root:INFO:equivariant loss function: MSELoss()
+2019-11-10 20:03:36,908:root:INFO:Starting epoch 1
+2019-11-10 20:03:56,417:root:INFO:Correctness on training epoch: 91.80%
+2019-11-10 20:03:59,187:root:INFO:Accuracy of the network on the 10000 validation images: 97.27%
+2019-11-10 20:04:02,142:root:INFO:Accuracy of the network on the 10000 translated images: 73.02%
+2019-11-10 20:04:05,307:root:INFO:Accuracy of the network on the 10000 rotated images: 79.04%
+2019-11-10 20:04:05,307:root:INFO:Starting epoch 2
+2019-11-10 20:04:25,714:root:INFO:Correctness on training epoch: 97.37%
+2019-11-10 20:04:28,844:root:INFO:Accuracy of the network on the 10000 validation images: 95.70%
+2019-11-10 20:04:32,224:root:INFO:Accuracy of the network on the 10000 translated images: 75.17%
+2019-11-10 20:04:35,653:root:INFO:Accuracy of the network on the 10000 rotated images: 79.48%
+2019-11-10 20:04:35,654:root:INFO:Starting epoch 3
+2019-11-10 20:04:55,804:root:INFO:Correctness on training epoch: 97.91%
+2019-11-10 20:04:58,572:root:INFO:Accuracy of the network on the 10000 validation images: 98.33%
+2019-11-10 20:05:01,896:root:INFO:Accuracy of the network on the 10000 translated images: 79.92%
+2019-11-10 20:05:04,844:root:INFO:Accuracy of the network on the 10000 rotated images: 84.31%
+2019-11-10 20:05:04,844:root:INFO:Starting epoch 4
+2019-11-10 20:05:24,516:root:INFO:Correctness on training epoch: 98.32%
+2019-11-10 20:05:27,270:root:INFO:Accuracy of the network on the 10000 validation images: 98.21%
+2019-11-10 20:05:30,234:root:INFO:Accuracy of the network on the 10000 translated images: 80.78%
+2019-11-10 20:05:33,053:root:INFO:Accuracy of the network on the 10000 rotated images: 84.38%
+2019-11-10 20:05:33,053:root:INFO:Starting epoch 5
+2019-11-10 20:05:52,719:root:INFO:Correctness on training epoch: 98.60%
+2019-11-10 20:05:55,422:root:INFO:Accuracy of the network on the 10000 validation images: 98.32%
+2019-11-10 20:05:58,318:root:INFO:Accuracy of the network on the 10000 translated images: 83.91%
+2019-11-10 20:06:01,178:root:INFO:Accuracy of the network on the 10000 rotated images: 86.89%
+2019-11-10 20:06:01,179:root:INFO:Starting epoch 6
+2019-11-10 20:06:20,852:root:INFO:Correctness on training epoch: 98.72%
+2019-11-10 20:06:23,613:root:INFO:Accuracy of the network on the 10000 validation images: 97.91%
+2019-11-10 20:06:26,611:root:INFO:Accuracy of the network on the 10000 translated images: 83.63%
+2019-11-10 20:06:29,397:root:INFO:Accuracy of the network on the 10000 rotated images: 86.16%
+2019-11-10 20:06:29,397:root:INFO:Starting epoch 7
+2019-11-10 20:06:49,188:root:INFO:Correctness on training epoch: 98.99%
+2019-11-10 20:06:51,988:root:INFO:Accuracy of the network on the 10000 validation images: 97.58%
+2019-11-10 20:06:54,974:root:INFO:Accuracy of the network on the 10000 translated images: 83.72%
+2019-11-10 20:06:57,871:root:INFO:Accuracy of the network on the 10000 rotated images: 86.06%
+2019-11-10 20:06:57,871:root:INFO:Starting epoch 8
+2019-11-10 20:07:17,714:root:INFO:Correctness on training epoch: 99.06%
+2019-11-10 20:07:20,459:root:INFO:Accuracy of the network on the 10000 validation images: 98.14%
+2019-11-10 20:07:23,451:root:INFO:Accuracy of the network on the 10000 translated images: 83.69%
+2019-11-10 20:07:26,399:root:INFO:Accuracy of the network on the 10000 rotated images: 86.69%
+2019-11-10 20:07:26,399:root:INFO:Starting epoch 9
+2019-11-10 20:07:46,335:root:INFO:Correctness on training epoch: 99.15%
+2019-11-10 20:07:49,014:root:INFO:Accuracy of the network on the 10000 validation images: 98.79%
+2019-11-10 20:07:51,932:root:INFO:Accuracy of the network on the 10000 translated images: 86.06%
+2019-11-10 20:07:54,681:root:INFO:Accuracy of the network on the 10000 rotated images: 88.36%
+2019-11-10 20:07:54,681:root:INFO:Starting epoch 10
+2019-11-10 20:08:13,929:root:INFO:Correctness on training epoch: 99.45%
+2019-11-10 20:08:16,449:root:INFO:Accuracy of the network on the 10000 validation images: 98.22%
+2019-11-10 20:08:19,141:root:INFO:Accuracy of the network on the 10000 translated images: 85.92%
+2019-11-10 20:08:21,794:root:INFO:Accuracy of the network on the 10000 rotated images: 88.16%
+2019-11-10 20:08:21,794:root:INFO:Starting epoch 11
+2019-11-10 20:08:40,817:root:INFO:Correctness on training epoch: 99.43%
+2019-11-10 20:08:43,829:root:INFO:Accuracy of the network on the 10000 validation images: 97.68%
+2019-11-10 20:08:46,551:root:INFO:Accuracy of the network on the 10000 translated images: 85.03%
+2019-11-10 20:08:49,184:root:INFO:Accuracy of the network on the 10000 rotated images: 87.13%
+2019-11-10 20:08:49,184:root:INFO:Starting epoch 12
+2019-11-10 20:09:08,066:root:INFO:Correctness on training epoch: 99.45%
+2019-11-10 20:09:10,611:root:INFO:Accuracy of the network on the 10000 validation images: 98.71%
+2019-11-10 20:09:13,302:root:INFO:Accuracy of the network on the 10000 translated images: 87.62%
+2019-11-10 20:09:15,949:root:INFO:Accuracy of the network on the 10000 rotated images: 89.49%
+2019-11-10 20:09:15,950:root:INFO:Starting epoch 13
+2019-11-10 20:09:34,873:root:INFO:Correctness on training epoch: 99.71%
+2019-11-10 20:09:37,412:root:INFO:Accuracy of the network on the 10000 validation images: 98.87%
+2019-11-10 20:09:40,085:root:INFO:Accuracy of the network on the 10000 translated images: 88.57%
+2019-11-10 20:09:42,740:root:INFO:Accuracy of the network on the 10000 rotated images: 90.37%
+2019-11-10 20:09:42,740:root:INFO:Starting epoch 14
+2019-11-10 20:10:01,660:root:INFO:Correctness on training epoch: 99.50%
+2019-11-10 20:10:04,248:root:INFO:Accuracy of the network on the 10000 validation images: 98.76%
+2019-11-10 20:10:06,962:root:INFO:Accuracy of the network on the 10000 translated images: 89.16%
+2019-11-10 20:10:09,587:root:INFO:Accuracy of the network on the 10000 rotated images: 90.71%
+2019-11-10 20:10:09,587:root:INFO:Starting epoch 15
+2019-11-10 20:10:28,398:root:INFO:Correctness on training epoch: 99.78%
+2019-11-10 20:10:31,008:root:INFO:Accuracy of the network on the 10000 validation images: 98.56%
+2019-11-10 20:10:33,744:root:INFO:Accuracy of the network on the 10000 translated images: 88.91%
+2019-11-10 20:10:36,415:root:INFO:Accuracy of the network on the 10000 rotated images: 90.28%
+2019-11-10 20:10:36,416:root:INFO:Starting epoch 16
+2019-11-10 20:10:55,346:root:INFO:Correctness on training epoch: 99.71%
+2019-11-10 20:10:57,979:root:INFO:Accuracy of the network on the 10000 validation images: 98.31%
+2019-11-10 20:11:00,706:root:INFO:Accuracy of the network on the 10000 translated images: 88.06%
+2019-11-10 20:11:03,324:root:INFO:Accuracy of the network on the 10000 rotated images: 89.72%
+2019-11-10 20:11:03,325:root:INFO:Starting epoch 17
+2019-11-10 20:11:22,244:root:INFO:Correctness on training epoch: 99.69%
+2019-11-10 20:11:24,817:root:INFO:Accuracy of the network on the 10000 validation images: 98.58%
+2019-11-10 20:11:27,541:root:INFO:Accuracy of the network on the 10000 translated images: 89.20%
+2019-11-10 20:11:30,206:root:INFO:Accuracy of the network on the 10000 rotated images: 90.43%
+2019-11-10 20:11:30,206:root:INFO:Starting epoch 18
+2019-11-10 20:11:48,966:root:INFO:Correctness on training epoch: 99.79%
+2019-11-10 20:11:51,482:root:INFO:Accuracy of the network on the 10000 validation images: 98.60%
+2019-11-10 20:11:54,401:root:INFO:Accuracy of the network on the 10000 translated images: 89.39%
+2019-11-10 20:11:57,050:root:INFO:Accuracy of the network on the 10000 rotated images: 90.52%
+2019-11-10 20:11:57,050:root:INFO:Starting epoch 19
+2019-11-10 20:12:16,177:root:INFO:Correctness on training epoch: 99.89%
+2019-11-10 20:12:18,784:root:INFO:Accuracy of the network on the 10000 validation images: 98.59%
+2019-11-10 20:12:21,470:root:INFO:Accuracy of the network on the 10000 translated images: 88.98%
+2019-11-10 20:12:24,068:root:INFO:Accuracy of the network on the 10000 rotated images: 90.48%
+2019-11-10 20:12:24,069:root:INFO:Starting epoch 20
+2019-11-10 20:12:43,126:root:INFO:Correctness on training epoch: 99.88%
+2019-11-10 20:12:45,725:root:INFO:Accuracy of the network on the 10000 validation images: 98.86%
+2019-11-10 20:12:48,435:root:INFO:Accuracy of the network on the 10000 translated images: 90.31%
+2019-11-10 20:12:51,149:root:INFO:Accuracy of the network on the 10000 rotated images: 91.76%
+2019-11-10 20:12:51,149:root:INFO:Starting epoch 21
+2019-11-10 20:13:09,897:root:INFO:Correctness on training epoch: 99.91%
+2019-11-10 20:13:12,479:root:INFO:Accuracy of the network on the 10000 validation images: 98.60%
+2019-11-10 20:13:15,187:root:INFO:Accuracy of the network on the 10000 translated images: 90.12%
+2019-11-10 20:13:17,838:root:INFO:Accuracy of the network on the 10000 rotated images: 90.89%
+2019-11-10 20:13:17,838:root:INFO:Starting epoch 22
+2019-11-10 20:13:36,680:root:INFO:Correctness on training epoch: 99.85%
+2019-11-10 20:13:39,256:root:INFO:Accuracy of the network on the 10000 validation images: 98.77%
+2019-11-10 20:13:41,986:root:INFO:Accuracy of the network on the 10000 translated images: 89.53%
+2019-11-10 20:13:44,622:root:INFO:Accuracy of the network on the 10000 rotated images: 90.73%
+2019-11-10 20:13:44,622:root:INFO:Starting epoch 23
+2019-11-10 20:14:05,396:root:INFO:Correctness on training epoch: 100.00%
+2019-11-10 20:14:08,361:root:INFO:Accuracy of the network on the 10000 validation images: 98.91%
+2019-11-10 20:14:11,641:root:INFO:Accuracy of the network on the 10000 translated images: 90.08%
+2019-11-10 20:14:14,659:root:INFO:Accuracy of the network on the 10000 rotated images: 91.34%
+2019-11-10 20:14:14,659:root:INFO:Starting epoch 24
+2019-11-10 20:14:36,493:root:INFO:Correctness on training epoch: 99.99%
+2019-11-10 20:14:39,571:root:INFO:Accuracy of the network on the 10000 validation images: 98.82%
+2019-11-10 20:14:42,826:root:INFO:Accuracy of the network on the 10000 translated images: 89.95%
+2019-11-10 20:14:46,363:root:INFO:Accuracy of the network on the 10000 rotated images: 91.10%
+2019-11-10 20:14:46,363:root:INFO:Starting epoch 25
+2019-11-10 20:15:07,945:root:INFO:Correctness on training epoch: 99.74%
+2019-11-10 20:15:11,135:root:INFO:Accuracy of the network on the 10000 validation images: 98.59%
+2019-11-10 20:15:14,430:root:INFO:Accuracy of the network on the 10000 translated images: 89.78%
+2019-11-10 20:15:17,401:root:INFO:Accuracy of the network on the 10000 rotated images: 90.70%
+2019-11-10 20:15:17,402:root:INFO:Starting epoch 26
+2019-11-10 20:15:38,009:root:INFO:Correctness on training epoch: 100.00%
+2019-11-10 20:15:40,878:root:INFO:Accuracy of the network on the 10000 validation images: 98.92%
+2019-11-10 20:15:44,097:root:INFO:Accuracy of the network on the 10000 translated images: 90.47%
+2019-11-10 20:15:47,641:root:INFO:Accuracy of the network on the 10000 rotated images: 91.28%
+2019-11-10 20:15:47,642:root:INFO:Finished
+2019-11-10 20:15:47,642:root:INFO:-------------------------Starting test 4----------------------------
+2019-11-10 20:15:47,652:root:INFO:Net(
+  (conv1): P4ConvZ2(in_channels=1, out_channels=16, kernel_size=(3, 3), stride=(1, 1), padding=(0, 0), bias=True, input_stabilizer_size=1, output_stabilizer_size=4)
+  (conv2): P4ConvP4(in_channels=16, out_channels=32, kernel_size=(3, 3), stride=(1, 1), padding=(0, 0), bias=True, input_stabilizer_size=4, output_stabilizer_size=4)
+  (conv4): P4ConvP4(in_channels=32, out_channels=64, kernel_size=(3, 3), stride=(1, 1), padding=(0, 0), bias=True, input_stabilizer_size=4, output_stabilizer_size=4)
+  (conv5): P4ConvP4(in_channels=64, out_channels=128, kernel_size=(3, 3), stride=(1, 1), padding=(0, 0), bias=True, input_stabilizer_size=4, output_stabilizer_size=4)
+  (fc1): Linear(in_features=8192, out_features=10, bias=True)
+)
+2019-11-10 20:15:47,653:root:INFO:equivariant loss function: MSELoss()
+2019-11-10 20:15:47,655:root:INFO:Starting epoch 1
+2019-11-10 20:16:08,967:root:INFO:Correctness on training epoch: 92.28%
+2019-11-10 20:16:11,657:root:INFO:Accuracy of the network on the 10000 validation images: 97.49%
+2019-11-10 20:16:14,848:root:INFO:Accuracy of the network on the 10000 translated images: 74.03%
+2019-11-10 20:16:17,659:root:INFO:Accuracy of the network on the 10000 rotated images: 79.78%
+2019-11-10 20:16:17,659:root:INFO:Starting epoch 2
+2019-11-10 20:16:37,627:root:INFO:Correctness on training epoch: 97.16%
+2019-11-10 20:16:40,816:root:INFO:Accuracy of the network on the 10000 validation images: 97.78%
+2019-11-10 20:16:43,857:root:INFO:Accuracy of the network on the 10000 translated images: 78.39%
+2019-11-10 20:16:46,851:root:INFO:Accuracy of the network on the 10000 rotated images: 82.99%
+2019-11-10 20:16:46,851:root:INFO:Starting epoch 3
+2019-11-10 20:17:08,431:root:INFO:Correctness on training epoch: 97.98%
+2019-11-10 20:17:11,457:root:INFO:Accuracy of the network on the 10000 validation images: 98.09%
+2019-11-10 20:17:14,860:root:INFO:Accuracy of the network on the 10000 translated images: 81.39%
+2019-11-10 20:17:17,870:root:INFO:Accuracy of the network on the 10000 rotated images: 84.99%
+2019-11-10 20:17:17,870:root:INFO:Starting epoch 4
+2019-11-10 20:17:39,034:root:INFO:Correctness on training epoch: 98.42%
+2019-11-10 20:17:41,564:root:INFO:Accuracy of the network on the 10000 validation images: 98.13%
+2019-11-10 20:17:44,317:root:INFO:Accuracy of the network on the 10000 translated images: 82.75%
+2019-11-10 20:17:46,982:root:INFO:Accuracy of the network on the 10000 rotated images: 86.10%
+2019-11-10 20:17:46,983:root:INFO:Starting epoch 5
+2019-11-10 20:18:07,039:root:INFO:Correctness on training epoch: 98.74%
+2019-11-10 20:18:09,558:root:INFO:Accuracy of the network on the 10000 validation images: 98.81%
+2019-11-10 20:18:12,270:root:INFO:Accuracy of the network on the 10000 translated images: 84.68%
+2019-11-10 20:18:14,986:root:INFO:Accuracy of the network on the 10000 rotated images: 87.66%
+2019-11-10 20:18:14,986:root:INFO:Starting epoch 6
+2019-11-10 20:18:34,680:root:INFO:Correctness on training epoch: 98.82%
+2019-11-10 20:18:37,179:root:INFO:Accuracy of the network on the 10000 validation images: 98.13%
+2019-11-10 20:18:39,886:root:INFO:Accuracy of the network on the 10000 translated images: 85.42%
+2019-11-10 20:18:42,494:root:INFO:Accuracy of the network on the 10000 rotated images: 87.72%
+2019-11-10 20:18:42,494:root:INFO:Starting epoch 7
+2019-11-10 20:19:02,086:root:INFO:Correctness on training epoch: 98.95%
+2019-11-10 20:19:04,598:root:INFO:Accuracy of the network on the 10000 validation images: 98.32%
+2019-11-10 20:19:07,307:root:INFO:Accuracy of the network on the 10000 translated images: 85.64%
+2019-11-10 20:19:09,970:root:INFO:Accuracy of the network on the 10000 rotated images: 88.17%
+2019-11-10 20:19:09,970:root:INFO:Starting epoch 8
+2019-11-10 20:19:29,440:root:INFO:Correctness on training epoch: 99.13%
+2019-11-10 20:19:31,886:root:INFO:Accuracy of the network on the 10000 validation images: 98.61%
+2019-11-10 20:19:34,584:root:INFO:Accuracy of the network on the 10000 translated images: 87.36%
+2019-11-10 20:19:37,182:root:INFO:Accuracy of the network on the 10000 rotated images: 89.23%
+2019-11-10 20:19:37,183:root:INFO:Starting epoch 9
+2019-11-10 20:19:56,692:root:INFO:Correctness on training epoch: 99.26%
+2019-11-10 20:19:59,152:root:INFO:Accuracy of the network on the 10000 validation images: 98.34%
+2019-11-10 20:20:01,864:root:INFO:Accuracy of the network on the 10000 translated images: 87.39%
+2019-11-10 20:20:04,464:root:INFO:Accuracy of the network on the 10000 rotated images: 89.37%
+2019-11-10 20:20:04,464:root:INFO:Starting epoch 10
+2019-11-10 20:20:24,025:root:INFO:Correctness on training epoch: 99.36%
+2019-11-10 20:20:26,499:root:INFO:Accuracy of the network on the 10000 validation images: 98.81%
+2019-11-10 20:20:29,204:root:INFO:Accuracy of the network on the 10000 translated images: 87.45%
+2019-11-10 20:20:31,781:root:INFO:Accuracy of the network on the 10000 rotated images: 89.65%
+2019-11-10 20:20:31,781:root:INFO:Starting epoch 11
+2019-11-10 20:20:51,262:root:INFO:Correctness on training epoch: 99.39%
+2019-11-10 20:20:53,690:root:INFO:Accuracy of the network on the 10000 validation images: 98.24%
+2019-11-10 20:20:56,321:root:INFO:Accuracy of the network on the 10000 translated images: 87.92%
+2019-11-10 20:20:58,900:root:INFO:Accuracy of the network on the 10000 rotated images: 89.45%
+2019-11-10 20:20:58,900:root:INFO:Starting epoch 12
+2019-11-10 20:21:18,380:root:INFO:Correctness on training epoch: 99.53%
+2019-11-10 20:21:20,844:root:INFO:Accuracy of the network on the 10000 validation images: 98.41%
+2019-11-10 20:21:23,476:root:INFO:Accuracy of the network on the 10000 translated images: 87.45%
+2019-11-10 20:21:26,056:root:INFO:Accuracy of the network on the 10000 rotated images: 89.44%
+2019-11-10 20:21:26,056:root:INFO:Starting epoch 13
+2019-11-10 20:21:46,313:root:INFO:Correctness on training epoch: 99.42%
+2019-11-10 20:21:48,802:root:INFO:Accuracy of the network on the 10000 validation images: 98.65%
+2019-11-10 20:21:51,510:root:INFO:Accuracy of the network on the 10000 translated images: 89.15%
+2019-11-10 20:21:54,137:root:INFO:Accuracy of the network on the 10000 rotated images: 90.58%
+2019-11-10 20:21:54,138:root:INFO:Starting epoch 14
+2019-11-10 20:22:13,896:root:INFO:Correctness on training epoch: 99.76%
+2019-11-10 20:22:16,386:root:INFO:Accuracy of the network on the 10000 validation images: 98.88%
+2019-11-10 20:22:19,064:root:INFO:Accuracy of the network on the 10000 translated images: 89.94%
+2019-11-10 20:22:21,658:root:INFO:Accuracy of the network on the 10000 rotated images: 91.32%
+2019-11-10 20:22:21,658:root:INFO:Starting epoch 15
+2019-11-10 20:22:41,221:root:INFO:Correctness on training epoch: 99.80%
+2019-11-10 20:22:43,661:root:INFO:Accuracy of the network on the 10000 validation images: 99.04%
+2019-11-10 20:22:46,307:root:INFO:Accuracy of the network on the 10000 translated images: 90.08%
+2019-11-10 20:22:48,934:root:INFO:Accuracy of the network on the 10000 rotated images: 91.56%
+2019-11-10 20:22:48,935:root:INFO:Starting epoch 16
+2019-11-10 20:23:08,398:root:INFO:Correctness on training epoch: 99.74%
+2019-11-10 20:23:10,898:root:INFO:Accuracy of the network on the 10000 validation images: 98.66%
+2019-11-10 20:23:13,576:root:INFO:Accuracy of the network on the 10000 translated images: 90.19%
+2019-11-10 20:23:16,127:root:INFO:Accuracy of the network on the 10000 rotated images: 91.44%
+2019-11-10 20:23:16,127:root:INFO:Starting epoch 17
+2019-11-10 20:23:35,833:root:INFO:Correctness on training epoch: 99.86%
+2019-11-10 20:23:38,336:root:INFO:Accuracy of the network on the 10000 validation images: 98.37%
+2019-11-10 20:23:41,060:root:INFO:Accuracy of the network on the 10000 translated images: 89.89%
+2019-11-10 20:23:43,651:root:INFO:Accuracy of the network on the 10000 rotated images: 90.43%
+2019-11-10 20:23:43,651:root:INFO:Starting epoch 18
+2019-11-10 20:24:03,328:root:INFO:Correctness on training epoch: 99.83%
+2019-11-10 20:24:05,780:root:INFO:Accuracy of the network on the 10000 validation images: 98.70%
+2019-11-10 20:24:08,480:root:INFO:Accuracy of the network on the 10000 translated images: 90.00%
+2019-11-10 20:24:11,115:root:INFO:Accuracy of the network on the 10000 rotated images: 91.22%
+2019-11-10 20:24:11,115:root:INFO:Starting epoch 19
+2019-11-10 20:24:30,713:root:INFO:Correctness on training epoch: 99.83%
+2019-11-10 20:24:33,182:root:INFO:Accuracy of the network on the 10000 validation images: 98.19%
+2019-11-10 20:24:35,899:root:INFO:Accuracy of the network on the 10000 translated images: 88.50%
+2019-11-10 20:24:38,473:root:INFO:Accuracy of the network on the 10000 rotated images: 89.44%
+2019-11-10 20:24:38,473:root:INFO:Starting epoch 20
+2019-11-10 20:24:58,106:root:INFO:Correctness on training epoch: 99.91%
+2019-11-10 20:25:00,592:root:INFO:Accuracy of the network on the 10000 validation images: 98.88%
+2019-11-10 20:25:04,010:root:INFO:Accuracy of the network on the 10000 translated images: 90.61%
+2019-11-10 20:25:06,724:root:INFO:Accuracy of the network on the 10000 rotated images: 91.75%
+2019-11-10 20:25:06,725:root:INFO:Starting epoch 21
+2019-11-10 20:25:26,293:root:INFO:Correctness on training epoch: 99.94%
+2019-11-10 20:25:28,776:root:INFO:Accuracy of the network on the 10000 validation images: 98.79%
+2019-11-10 20:25:31,433:root:INFO:Accuracy of the network on the 10000 translated images: 90.42%
+2019-11-10 20:25:34,026:root:INFO:Accuracy of the network on the 10000 rotated images: 91.47%
+2019-11-10 20:25:34,027:root:INFO:Starting epoch 22
+2019-11-10 20:25:53,533:root:INFO:Correctness on training epoch: 100.00%
+2019-11-10 20:25:55,981:root:INFO:Accuracy of the network on the 10000 validation images: 98.91%
+2019-11-10 20:25:58,643:root:INFO:Accuracy of the network on the 10000 translated images: 91.06%
+2019-11-10 20:26:01,234:root:INFO:Accuracy of the network on the 10000 rotated images: 91.87%
+2019-11-10 20:26:01,234:root:INFO:Starting epoch 23
+2019-11-10 20:26:20,698:root:INFO:Correctness on training epoch: 99.96%
+2019-11-10 20:26:23,155:root:INFO:Accuracy of the network on the 10000 validation images: 98.80%
+2019-11-10 20:26:25,809:root:INFO:Accuracy of the network on the 10000 translated images: 90.58%
+2019-11-10 20:26:28,841:root:INFO:Accuracy of the network on the 10000 rotated images: 91.48%
+2019-11-10 20:26:28,841:root:INFO:Starting epoch 24
+2019-11-10 20:26:48,362:root:INFO:Correctness on training epoch: 99.99%
+2019-11-10 20:26:50,838:root:INFO:Accuracy of the network on the 10000 validation images: 98.85%
+2019-11-10 20:26:53,512:root:INFO:Accuracy of the network on the 10000 translated images: 90.66%
+2019-11-10 20:26:56,145:root:INFO:Accuracy of the network on the 10000 rotated images: 91.43%
+2019-11-10 20:26:56,145:root:INFO:Starting epoch 25
+2019-11-10 20:27:15,755:root:INFO:Correctness on training epoch: 100.00%
+2019-11-10 20:27:18,244:root:INFO:Accuracy of the network on the 10000 validation images: 98.85%
+2019-11-10 20:27:20,939:root:INFO:Accuracy of the network on the 10000 translated images: 90.61%
+2019-11-10 20:27:23,420:root:INFO:Accuracy of the network on the 10000 rotated images: 91.49%
+2019-11-10 20:27:23,420:root:INFO:Finished
+2019-11-10 20:27:23,421:root:INFO:-------------------------Starting test 5----------------------------
+2019-11-10 20:27:23,431:root:INFO:Net(
+  (conv1): P4ConvZ2(in_channels=1, out_channels=16, kernel_size=(3, 3), stride=(1, 1), padding=(0, 0), bias=True, input_stabilizer_size=1, output_stabilizer_size=4)
+  (conv2): P4ConvP4(in_channels=16, out_channels=32, kernel_size=(3, 3), stride=(1, 1), padding=(0, 0), bias=True, input_stabilizer_size=4, output_stabilizer_size=4)
+  (conv4): P4ConvP4(in_channels=32, out_channels=64, kernel_size=(3, 3), stride=(1, 1), padding=(0, 0), bias=True, input_stabilizer_size=4, output_stabilizer_size=4)
+  (conv5): P4ConvP4(in_channels=64, out_channels=128, kernel_size=(3, 3), stride=(1, 1), padding=(0, 0), bias=True, input_stabilizer_size=4, output_stabilizer_size=4)
+  (fc1): Linear(in_features=8192, out_features=10, bias=True)
+)
+2019-11-10 20:27:23,431:root:INFO:equivariant loss function: MSELoss()
+2019-11-10 20:27:23,433:root:INFO:Starting epoch 1
+2019-11-10 20:27:42,377:root:INFO:Correctness on training epoch: 91.82%
+2019-11-10 20:27:44,635:root:INFO:Accuracy of the network on the 10000 validation images: 94.58%
+2019-11-10 20:27:47,032:root:INFO:Accuracy of the network on the 10000 translated images: 70.51%
+2019-11-10 20:27:49,361:root:INFO:Accuracy of the network on the 10000 rotated images: 76.34%
+2019-11-10 20:27:49,361:root:INFO:Starting epoch 2
+2019-11-10 20:28:08,149:root:INFO:Correctness on training epoch: 97.43%
+2019-11-10 20:28:10,412:root:INFO:Accuracy of the network on the 10000 validation images: 96.92%
+2019-11-10 20:28:12,742:root:INFO:Accuracy of the network on the 10000 translated images: 75.50%
+2019-11-10 20:28:15,030:root:INFO:Accuracy of the network on the 10000 rotated images: 80.72%
+2019-11-10 20:28:15,030:root:INFO:Starting epoch 3
+2019-11-10 20:28:33,795:root:INFO:Correctness on training epoch: 97.96%
+2019-11-10 20:28:36,115:root:INFO:Accuracy of the network on the 10000 validation images: 98.41%
+2019-11-10 20:28:38,540:root:INFO:Accuracy of the network on the 10000 translated images: 79.64%
+2019-11-10 20:28:40,881:root:INFO:Accuracy of the network on the 10000 rotated images: 84.02%
+2019-11-10 20:28:40,881:root:INFO:Starting epoch 4
+2019-11-10 20:28:59,689:root:INFO:Correctness on training epoch: 98.23%
+2019-11-10 20:29:01,979:root:INFO:Accuracy of the network on the 10000 validation images: 97.74%
+2019-11-10 20:29:04,382:root:INFO:Accuracy of the network on the 10000 translated images: 81.93%
+2019-11-10 20:29:06,691:root:INFO:Accuracy of the network on the 10000 rotated images: 85.15%
+2019-11-10 20:29:06,692:root:INFO:Starting epoch 5
+2019-11-10 20:29:25,337:root:INFO:Correctness on training epoch: 98.48%
+2019-11-10 20:29:27,594:root:INFO:Accuracy of the network on the 10000 validation images: 98.22%
+2019-11-10 20:29:29,991:root:INFO:Accuracy of the network on the 10000 translated images: 81.83%
+2019-11-10 20:29:32,289:root:INFO:Accuracy of the network on the 10000 rotated images: 85.79%
+2019-11-10 20:29:32,290:root:INFO:Starting epoch 6
+2019-11-10 20:29:50,887:root:INFO:Correctness on training epoch: 98.78%
+2019-11-10 20:29:53,142:root:INFO:Accuracy of the network on the 10000 validation images: 98.31%
+2019-11-10 20:29:55,534:root:INFO:Accuracy of the network on the 10000 translated images: 84.86%
+2019-11-10 20:29:57,855:root:INFO:Accuracy of the network on the 10000 rotated images: 87.60%
+2019-11-10 20:29:57,856:root:INFO:Starting epoch 7
+2019-11-10 20:30:16,915:root:INFO:Correctness on training epoch: 99.17%
+2019-11-10 20:30:19,255:root:INFO:Accuracy of the network on the 10000 validation images: 97.94%
+2019-11-10 20:30:21,725:root:INFO:Accuracy of the network on the 10000 translated images: 84.18%
+2019-11-10 20:30:24,047:root:INFO:Accuracy of the network on the 10000 rotated images: 86.63%
+2019-11-10 20:30:24,047:root:INFO:Starting epoch 8
+2019-11-10 20:30:42,845:root:INFO:Correctness on training epoch: 99.10%
+2019-11-10 20:30:45,117:root:INFO:Accuracy of the network on the 10000 validation images: 98.48%
+2019-11-10 20:30:47,493:root:INFO:Accuracy of the network on the 10000 translated images: 85.53%
+2019-11-10 20:30:49,882:root:INFO:Accuracy of the network on the 10000 rotated images: 88.25%
+2019-11-10 20:30:49,882:root:INFO:Starting epoch 9
+2019-11-10 20:31:08,583:root:INFO:Correctness on training epoch: 99.28%
+2019-11-10 20:31:10,868:root:INFO:Accuracy of the network on the 10000 validation images: 98.94%
+2019-11-10 20:31:13,281:root:INFO:Accuracy of the network on the 10000 translated images: 86.95%
+2019-11-10 20:31:15,611:root:INFO:Accuracy of the network on the 10000 rotated images: 89.25%
+2019-11-10 20:31:15,611:root:INFO:Starting epoch 10
+2019-11-10 20:31:34,476:root:INFO:Correctness on training epoch: 99.19%
+2019-11-10 20:31:36,757:root:INFO:Accuracy of the network on the 10000 validation images: 98.57%
+2019-11-10 20:31:39,162:root:INFO:Accuracy of the network on the 10000 translated images: 87.16%
+2019-11-10 20:31:41,485:root:INFO:Accuracy of the network on the 10000 rotated images: 89.27%
+2019-11-10 20:31:41,485:root:INFO:Starting epoch 11
+2019-11-10 20:32:00,211:root:INFO:Correctness on training epoch: 99.46%
+2019-11-10 20:32:02,462:root:INFO:Accuracy of the network on the 10000 validation images: 98.66%
+2019-11-10 20:32:04,824:root:INFO:Accuracy of the network on the 10000 translated images: 87.92%
+2019-11-10 20:32:07,133:root:INFO:Accuracy of the network on the 10000 rotated images: 89.57%
+2019-11-10 20:32:07,133:root:INFO:Starting epoch 12
+2019-11-10 20:32:25,705:root:INFO:Correctness on training epoch: 99.61%
+2019-11-10 20:32:27,971:root:INFO:Accuracy of the network on the 10000 validation images: 98.59%
+2019-11-10 20:32:30,387:root:INFO:Accuracy of the network on the 10000 translated images: 87.89%
+2019-11-10 20:32:32,732:root:INFO:Accuracy of the network on the 10000 rotated images: 89.50%
+2019-11-10 20:32:32,732:root:INFO:Starting epoch 13
+2019-11-10 20:32:51,745:root:INFO:Correctness on training epoch: 99.52%
+2019-11-10 20:32:54,046:root:INFO:Accuracy of the network on the 10000 validation images: 97.77%
+2019-11-10 20:32:56,473:root:INFO:Accuracy of the network on the 10000 translated images: 87.80%
+2019-11-10 20:32:58,791:root:INFO:Accuracy of the network on the 10000 rotated images: 89.53%
+2019-11-10 20:32:58,791:root:INFO:Starting epoch 14
+2019-11-10 20:33:17,588:root:INFO:Correctness on training epoch: 99.62%
+2019-11-10 20:33:19,870:root:INFO:Accuracy of the network on the 10000 validation images: 98.64%
+2019-11-10 20:33:22,307:root:INFO:Accuracy of the network on the 10000 translated images: 89.55%
+2019-11-10 20:33:24,604:root:INFO:Accuracy of the network on the 10000 rotated images: 90.96%
+2019-11-10 20:33:24,604:root:INFO:Starting epoch 15
+2019-11-10 20:33:43,239:root:INFO:Correctness on training epoch: 99.82%
+2019-11-10 20:33:45,518:root:INFO:Accuracy of the network on the 10000 validation images: 98.87%
+2019-11-10 20:33:47,948:root:INFO:Accuracy of the network on the 10000 translated images: 89.67%
+2019-11-10 20:33:50,277:root:INFO:Accuracy of the network on the 10000 rotated images: 90.91%
+2019-11-10 20:33:50,277:root:INFO:Starting epoch 16
+2019-11-10 20:34:09,238:root:INFO:Correctness on training epoch: 99.82%
+2019-11-10 20:34:11,541:root:INFO:Accuracy of the network on the 10000 validation images: 98.25%
+2019-11-10 20:34:13,967:root:INFO:Accuracy of the network on the 10000 translated images: 88.33%
+2019-11-10 20:34:16,325:root:INFO:Accuracy of the network on the 10000 rotated images: 89.89%
+2019-11-10 20:34:16,326:root:INFO:Starting epoch 17
+2019-11-10 20:34:35,037:root:INFO:Correctness on training epoch: 99.81%
+2019-11-10 20:34:37,331:root:INFO:Accuracy of the network on the 10000 validation images: 98.92%
+2019-11-10 20:34:39,756:root:INFO:Accuracy of the network on the 10000 translated images: 89.97%
+2019-11-10 20:34:42,066:root:INFO:Accuracy of the network on the 10000 rotated images: 91.07%
+2019-11-10 20:34:42,066:root:INFO:Starting epoch 18
+2019-11-10 20:35:02,945:root:INFO:Correctness on training epoch: 99.95%
+2019-11-10 20:35:06,148:root:INFO:Accuracy of the network on the 10000 validation images: 98.78%
+2019-11-10 20:35:09,568:root:INFO:Accuracy of the network on the 10000 translated images: 90.62%
+2019-11-10 20:35:12,633:root:INFO:Accuracy of the network on the 10000 rotated images: 91.59%
+2019-11-10 20:35:12,633:root:INFO:Starting epoch 19
+2019-11-10 20:35:33,173:root:INFO:Correctness on training epoch: 99.67%
+2019-11-10 20:35:36,183:root:INFO:Accuracy of the network on the 10000 validation images: 98.80%
+2019-11-10 20:35:39,289:root:INFO:Accuracy of the network on the 10000 translated images: 90.00%
+2019-11-10 20:35:42,250:root:INFO:Accuracy of the network on the 10000 rotated images: 91.38%
+2019-11-10 20:35:42,250:root:INFO:Starting epoch 20
+2019-11-10 20:36:02,161:root:INFO:Correctness on training epoch: 99.74%
+2019-11-10 20:36:05,098:root:INFO:Accuracy of the network on the 10000 validation images: 98.82%
+2019-11-10 20:36:08,159:root:INFO:Accuracy of the network on the 10000 translated images: 90.53%
+2019-11-10 20:36:11,190:root:INFO:Accuracy of the network on the 10000 rotated images: 91.49%
+2019-11-10 20:36:11,190:root:INFO:Starting epoch 21
+2019-11-10 20:36:31,126:root:INFO:Correctness on training epoch: 99.87%
+2019-11-10 20:36:33,915:root:INFO:Accuracy of the network on the 10000 validation images: 98.94%
+2019-11-10 20:36:36,944:root:INFO:Accuracy of the network on the 10000 translated images: 90.47%
+2019-11-10 20:36:40,009:root:INFO:Accuracy of the network on the 10000 rotated images: 91.51%
+2019-11-10 20:36:40,009:root:INFO:Starting epoch 22
+2019-11-10 20:36:59,732:root:INFO:Correctness on training epoch: 100.00%
+2019-11-10 20:37:02,617:root:INFO:Accuracy of the network on the 10000 validation images: 98.94%
+2019-11-10 20:37:05,594:root:INFO:Accuracy of the network on the 10000 translated images: 90.84%
+2019-11-10 20:37:08,469:root:INFO:Accuracy of the network on the 10000 rotated images: 91.88%
+2019-11-10 20:37:08,470:root:INFO:Starting epoch 23
+2019-11-10 20:37:28,153:root:INFO:Correctness on training epoch: 100.00%
+2019-11-10 20:37:30,938:root:INFO:Accuracy of the network on the 10000 validation images: 98.95%
+2019-11-10 20:37:33,855:root:INFO:Accuracy of the network on the 10000 translated images: 91.53%
+2019-11-10 20:37:36,690:root:INFO:Accuracy of the network on the 10000 rotated images: 92.25%
+2019-11-10 20:37:36,690:root:INFO:Finished
+2019-11-10 20:37:36,690:root:INFO:-------------------------Starting test 6----------------------------
+2019-11-10 20:37:36,701:root:INFO:Net(
+  (conv1): P4ConvZ2(in_channels=1, out_channels=16, kernel_size=(3, 3), stride=(1, 1), padding=(0, 0), bias=True, input_stabilizer_size=1, output_stabilizer_size=4)
+  (conv2): P4ConvP4(in_channels=16, out_channels=32, kernel_size=(3, 3), stride=(1, 1), padding=(0, 0), bias=True, input_stabilizer_size=4, output_stabilizer_size=4)
+  (conv4): P4ConvP4(in_channels=32, out_channels=64, kernel_size=(3, 3), stride=(1, 1), padding=(0, 0), bias=True, input_stabilizer_size=4, output_stabilizer_size=4)
+  (conv5): P4ConvP4(in_channels=64, out_channels=128, kernel_size=(3, 3), stride=(1, 1), padding=(0, 0), bias=True, input_stabilizer_size=4, output_stabilizer_size=4)
+  (fc1): Linear(in_features=8192, out_features=10, bias=True)
+)
+2019-11-10 20:37:36,701:root:INFO:equivariant loss function: MSELoss()
+2019-11-10 20:37:36,703:root:INFO:Starting epoch 1
+2019-11-10 20:37:56,424:root:INFO:Correctness on training epoch: 90.62%
+2019-11-10 20:37:59,214:root:INFO:Accuracy of the network on the 10000 validation images: 97.28%
+2019-11-10 20:38:02,185:root:INFO:Accuracy of the network on the 10000 translated images: 73.84%
+2019-11-10 20:38:04,993:root:INFO:Accuracy of the network on the 10000 rotated images: 79.32%
+2019-11-10 20:38:04,994:root:INFO:Starting epoch 2
+2019-11-10 20:38:24,640:root:INFO:Correctness on training epoch: 97.10%
+2019-11-10 20:38:27,424:root:INFO:Accuracy of the network on the 10000 validation images: 97.23%
+2019-11-10 20:38:30,410:root:INFO:Accuracy of the network on the 10000 translated images: 76.12%
+2019-11-10 20:38:33,248:root:INFO:Accuracy of the network on the 10000 rotated images: 81.13%
+2019-11-10 20:38:33,248:root:INFO:Starting epoch 3
+2019-11-10 20:38:52,863:root:INFO:Correctness on training epoch: 97.73%
+2019-11-10 20:38:55,656:root:INFO:Accuracy of the network on the 10000 validation images: 97.02%
+2019-11-10 20:38:58,572:root:INFO:Accuracy of the network on the 10000 translated images: 79.56%
+2019-11-10 20:39:01,488:root:INFO:Accuracy of the network on the 10000 rotated images: 82.74%
+2019-11-10 20:39:01,489:root:INFO:Starting epoch 4
+2019-11-10 20:39:21,115:root:INFO:Correctness on training epoch: 98.21%
+2019-11-10 20:39:23,835:root:INFO:Accuracy of the network on the 10000 validation images: 98.18%
+2019-11-10 20:39:27,060:root:INFO:Accuracy of the network on the 10000 translated images: 81.59%
+2019-11-10 20:39:29,841:root:INFO:Accuracy of the network on the 10000 rotated images: 85.14%
+2019-11-10 20:39:29,841:root:INFO:Starting epoch 5
+2019-11-10 20:39:49,381:root:INFO:Correctness on training epoch: 98.53%
+2019-11-10 20:39:52,130:root:INFO:Accuracy of the network on the 10000 validation images: 98.02%
+2019-11-10 20:39:55,031:root:INFO:Accuracy of the network on the 10000 translated images: 83.49%
+2019-11-10 20:39:57,991:root:INFO:Accuracy of the network on the 10000 rotated images: 86.63%
+2019-11-10 20:39:57,991:root:INFO:Starting epoch 6
+2019-11-10 20:40:17,658:root:INFO:Correctness on training epoch: 98.62%
+2019-11-10 20:40:20,525:root:INFO:Accuracy of the network on the 10000 validation images: 98.53%
+2019-11-10 20:40:23,421:root:INFO:Accuracy of the network on the 10000 translated images: 84.14%
+2019-11-10 20:40:26,245:root:INFO:Accuracy of the network on the 10000 rotated images: 87.44%
+2019-11-10 20:40:26,246:root:INFO:Starting epoch 7
+2019-11-10 20:40:45,988:root:INFO:Correctness on training epoch: 98.87%
+2019-11-10 20:40:48,763:root:INFO:Accuracy of the network on the 10000 validation images: 98.40%
+2019-11-10 20:40:51,725:root:INFO:Accuracy of the network on the 10000 translated images: 84.99%
+2019-11-10 20:40:54,566:root:INFO:Accuracy of the network on the 10000 rotated images: 87.99%
+2019-11-10 20:40:54,566:root:INFO:Starting epoch 8
+2019-11-10 20:41:14,514:root:INFO:Correctness on training epoch: 99.14%
+2019-11-10 20:41:17,459:root:INFO:Accuracy of the network on the 10000 validation images: 98.40%
+2019-11-10 20:41:20,599:root:INFO:Accuracy of the network on the 10000 translated images: 86.31%
+2019-11-10 20:41:23,495:root:INFO:Accuracy of the network on the 10000 rotated images: 88.46%
+2019-11-10 20:41:23,495:root:INFO:Starting epoch 9
+2019-11-10 20:41:45,580:root:INFO:Correctness on training epoch: 99.14%
+2019-11-10 20:41:48,659:root:INFO:Accuracy of the network on the 10000 validation images: 98.35%
+2019-11-10 20:41:51,659:root:INFO:Accuracy of the network on the 10000 translated images: 87.36%
+2019-11-10 20:41:54,478:root:INFO:Accuracy of the network on the 10000 rotated images: 89.24%
+2019-11-10 20:41:54,478:root:INFO:Starting epoch 10
+2019-11-10 20:42:15,057:root:INFO:Correctness on training epoch: 99.42%
+2019-11-10 20:42:17,747:root:INFO:Accuracy of the network on the 10000 validation images: 97.83%
+2019-11-10 20:42:20,791:root:INFO:Accuracy of the network on the 10000 translated images: 84.58%
+2019-11-10 20:42:23,789:root:INFO:Accuracy of the network on the 10000 rotated images: 86.53%
+2019-11-10 20:42:23,790:root:INFO:Starting epoch 11
+2019-11-10 20:42:45,809:root:INFO:Correctness on training epoch: 99.33%
+2019-11-10 20:42:48,786:root:INFO:Accuracy of the network on the 10000 validation images: 98.70%
+2019-11-10 20:42:51,994:root:INFO:Accuracy of the network on the 10000 translated images: 88.80%
+2019-11-10 20:42:55,015:root:INFO:Accuracy of the network on the 10000 rotated images: 90.42%
+2019-11-10 20:42:55,015:root:INFO:Starting epoch 12
+2019-11-10 20:43:16,897:root:INFO:Correctness on training epoch: 99.39%
+2019-11-10 20:43:19,981:root:INFO:Accuracy of the network on the 10000 validation images: 97.84%
+2019-11-10 20:43:23,065:root:INFO:Accuracy of the network on the 10000 translated images: 86.38%
+2019-11-10 20:43:25,879:root:INFO:Accuracy of the network on the 10000 rotated images: 87.95%
+2019-11-10 20:43:25,879:root:INFO:Starting epoch 13
+2019-11-10 20:43:47,394:root:INFO:Correctness on training epoch: 99.33%
+2019-11-10 20:43:50,069:root:INFO:Accuracy of the network on the 10000 validation images: 98.53%
+2019-11-10 20:43:52,894:root:INFO:Accuracy of the network on the 10000 translated images: 87.91%
+2019-11-10 20:43:55,716:root:INFO:Accuracy of the network on the 10000 rotated images: 89.51%
+2019-11-10 20:43:55,717:root:INFO:Starting epoch 14
+2019-11-10 20:44:17,707:root:INFO:Correctness on training epoch: 99.58%
+2019-11-10 20:44:20,385:root:INFO:Accuracy of the network on the 10000 validation images: 98.69%
+2019-11-10 20:44:23,849:root:INFO:Accuracy of the network on the 10000 translated images: 88.92%
+2019-11-10 20:44:26,977:root:INFO:Accuracy of the network on the 10000 rotated images: 90.26%
+2019-11-10 20:44:26,978:root:INFO:Starting epoch 15
+2019-11-10 20:44:48,395:root:INFO:Correctness on training epoch: 99.60%
+2019-11-10 20:44:51,304:root:INFO:Accuracy of the network on the 10000 validation images: 98.12%
+2019-11-10 20:44:54,113:root:INFO:Accuracy of the network on the 10000 translated images: 87.36%
+2019-11-10 20:44:56,862:root:INFO:Accuracy of the network on the 10000 rotated images: 89.03%
+2019-11-10 20:44:56,863:root:INFO:Starting epoch 16
+2019-11-10 20:45:17,539:root:INFO:Correctness on training epoch: 99.78%
+2019-11-10 20:45:20,390:root:INFO:Accuracy of the network on the 10000 validation images: 98.70%
+2019-11-10 20:45:23,496:root:INFO:Accuracy of the network on the 10000 translated images: 90.16%
+2019-11-10 20:45:26,518:root:INFO:Accuracy of the network on the 10000 rotated images: 91.14%
+2019-11-10 20:45:26,519:root:INFO:Starting epoch 17
+2019-11-10 20:45:46,475:root:INFO:Correctness on training epoch: 99.81%
+2019-11-10 20:45:49,346:root:INFO:Accuracy of the network on the 10000 validation images: 98.85%
+2019-11-10 20:45:52,884:root:INFO:Accuracy of the network on the 10000 translated images: 90.31%
+2019-11-10 20:45:56,698:root:INFO:Accuracy of the network on the 10000 rotated images: 91.23%
+2019-11-10 20:45:56,698:root:INFO:Starting epoch 18
+2019-11-10 20:46:16,729:root:INFO:Correctness on training epoch: 99.86%
+2019-11-10 20:46:19,561:root:INFO:Accuracy of the network on the 10000 validation images: 98.74%
+2019-11-10 20:46:22,637:root:INFO:Accuracy of the network on the 10000 translated images: 90.05%
+2019-11-10 20:46:25,563:root:INFO:Accuracy of the network on the 10000 rotated images: 91.23%
+2019-11-10 20:46:25,563:root:INFO:Starting epoch 19
+2019-11-10 20:46:45,347:root:INFO:Correctness on training epoch: 99.89%
+2019-11-10 20:46:48,197:root:INFO:Accuracy of the network on the 10000 validation images: 98.83%
+2019-11-10 20:46:51,263:root:INFO:Accuracy of the network on the 10000 translated images: 90.64%
+2019-11-10 20:46:54,227:root:INFO:Accuracy of the network on the 10000 rotated images: 91.64%
+2019-11-10 20:46:54,228:root:INFO:Starting epoch 20
+2019-11-10 20:47:14,113:root:INFO:Correctness on training epoch: 99.76%
+2019-11-10 20:47:17,704:root:INFO:Accuracy of the network on the 10000 validation images: 98.29%
+2019-11-10 20:47:20,833:root:INFO:Accuracy of the network on the 10000 translated images: 88.58%
+2019-11-10 20:47:23,866:root:INFO:Accuracy of the network on the 10000 rotated images: 89.98%
+2019-11-10 20:47:23,866:root:INFO:Starting epoch 21
+2019-11-10 20:47:44,295:root:INFO:Correctness on training epoch: 99.75%
+2019-11-10 20:47:47,318:root:INFO:Accuracy of the network on the 10000 validation images: 98.63%
+2019-11-10 20:47:50,428:root:INFO:Accuracy of the network on the 10000 translated images: 90.22%
+2019-11-10 20:47:53,422:root:INFO:Accuracy of the network on the 10000 rotated images: 91.18%
+2019-11-10 20:47:53,422:root:INFO:Starting epoch 22
+2019-11-10 20:48:13,219:root:INFO:Correctness on training epoch: 99.91%
+2019-11-10 20:48:16,073:root:INFO:Accuracy of the network on the 10000 validation images: 98.75%
+2019-11-10 20:48:19,100:root:INFO:Accuracy of the network on the 10000 translated images: 90.75%
+2019-11-10 20:48:22,046:root:INFO:Accuracy of the network on the 10000 rotated images: 91.47%
+2019-11-10 20:48:22,047:root:INFO:Starting epoch 23
+2019-11-10 20:48:42,001:root:INFO:Correctness on training epoch: 99.98%
+2019-11-10 20:48:44,761:root:INFO:Accuracy of the network on the 10000 validation images: 98.89%
+2019-11-10 20:48:47,762:root:INFO:Accuracy of the network on the 10000 translated images: 91.12%
+2019-11-10 20:48:50,668:root:INFO:Accuracy of the network on the 10000 rotated images: 91.93%
+2019-11-10 20:48:50,669:root:INFO:Starting epoch 24
+2019-11-10 20:49:10,625:root:INFO:Correctness on training epoch: 100.00%
+2019-11-10 20:49:13,695:root:INFO:Accuracy of the network on the 10000 validation images: 98.82%
+2019-11-10 20:49:16,738:root:INFO:Accuracy of the network on the 10000 translated images: 91.63%
+2019-11-10 20:49:19,702:root:INFO:Accuracy of the network on the 10000 rotated images: 92.04%
+2019-11-10 20:49:19,703:root:INFO:Starting epoch 25
+2019-11-10 20:49:39,511:root:INFO:Correctness on training epoch: 100.00%
+2019-11-10 20:49:42,358:root:INFO:Accuracy of the network on the 10000 validation images: 98.86%
+2019-11-10 20:49:45,400:root:INFO:Accuracy of the network on the 10000 translated images: 91.17%
+2019-11-10 20:49:48,373:root:INFO:Accuracy of the network on the 10000 rotated images: 91.63%
+2019-11-10 20:49:48,373:root:INFO:Finished
+2019-11-10 20:49:48,374:root:INFO:-------------------------Testing Finished----------------------------
